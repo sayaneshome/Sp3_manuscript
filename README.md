@@ -100,7 +100,7 @@ Stages are sequential; each consumes the previous stage's outputs.
 
 ```
 [1] Differential expression (DESeq2)  ──►  normalized counts, DE gene lists (I/II/III × up/down)
-[2] Motif analysis (HOMER / FIMO)      ──►  per-contrast motif tables, TF-family summaries
+[2] Motif analysis (HOMER)      ──►  per-contrast motif tables, TF-family summaries
 [3] Figures & enrichment (GO/GSEA, scatterplots, Venn, heatmaps)
 [4] Machine learning (random forest on TF-family features)  ──►  Supplementary Figure 2c
 ```
