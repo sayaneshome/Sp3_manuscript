@@ -5,7 +5,7 @@ authors:
   - family-names: Shome
     given-names: Sayane
     email: sayaneshome.rsg@gmail.com
-repository-code: "https://github.com/sayaneshome/sp3-rnaseq-analysis"
+repository-code: "https://github.com/sayaneshome/Sp3_manuscript"
 license: MIT
 keywords:
   - RNA-seq

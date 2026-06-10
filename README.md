@@ -19,8 +19,8 @@ reproduced end-to-end.
 
 ```bash
 # 1. Clone
-git clone https://github.com/sayaneshome/sp3-rnaseq-analysis.git
-cd sp3-rnaseq-analysis
+git clone https://github.com/sayaneshome/Sp3_manuscript.git
+cd Sp3_manuscript
 
 # 2. Build the combined Python + R environment (one step)
 conda env create -f environment/environment.yml   # or: mamba env create -f ...
@@ -44,7 +44,7 @@ Prefer pip + a system R? Use `environment/requirements.txt` (Python) and
 ## Repository layout
 
 ```
-sp3-rnaseq-analysis/
+Sp3_manuscript/
 ├── README.md
 ├── LICENSE                       # MIT
 ├── CITATION.cff
