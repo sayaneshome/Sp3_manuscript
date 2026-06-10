@@ -1,7 +1,7 @@
 # Code availability
 
 The following statement can be pasted into the manuscript. Replace
-`<your-github-username>` with your GitHub account and, after the first tagged
+`sayaneshome` with your GitHub account and, after the first tagged
 release, optionally mint a DOI via [Zenodo](https://zenodo.org/) and add it.
 
 ---
@@ -13,7 +13,7 @@ release, optionally mint a DOI via [Zenodo](https://zenodo.org/) and add it.
 > analysis, gene-ontology/GSEA, and figure generation) and for the machine-learning
 > analysis (random-forest and multitask models of transcription-factor–target gene
 > expression) is openly available at
-> https://github.com/<your-github-username>/sp3-rnaseq-analysis. The repository
+> https://github.com/sayaneshome/sp3-rnaseq-analysis. The repository
 > includes the processed input data, a pinned computational environment
 > (Python and R), and step-by-step instructions to reproduce all figures.
 
@@ -21,12 +21,12 @@ release, optionally mint a DOI via [Zenodo](https://zenodo.org/) and add it.
 
 > **Code availability.** The code for the machine-learning analysis, together with
 > the full bioinformatics workflow and processed input data, is available at
-> https://github.com/<your-github-username>/sp3-rnaseq-analysis.
+> https://github.com/sayaneshome/sp3-rnaseq-analysis.
 
 ## With a Zenodo DOI (after release)
 
 > **Code availability.** All analysis code is available at
-> https://github.com/<your-github-username>/sp3-rnaseq-analysis and archived at
+> https://github.com/sayaneshome/sp3-rnaseq-analysis and archived at
 > Zenodo (DOI: 10.5281/zenodo.XXXXXXX).
 
 ---

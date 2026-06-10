@@ -19,7 +19,7 @@ reproduced end-to-end.
 
 ```bash
 # 1. Clone
-git clone https://github.com/<your-github-username>/sp3-rnaseq-analysis.git
+git clone https://github.com/sayaneshome/sp3-rnaseq-analysis.git
 cd sp3-rnaseq-analysis
 
 # 2. Build the combined Python + R environment (one step)
