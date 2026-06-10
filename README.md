@@ -1,4 +1,4 @@
-# Sp3 RNA-seq analysis
+# Codes used for Computational analyses in Sp3 manuscript
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -86,15 +86,8 @@ Sp3_manuscript/
 │   ├── differential_expression/  # DESeq2 DE + manuscript figure notebooks
 │   ├── motif_analysis/           # HOMER motif enrichment + TF binding sites
 │   └── plots_and_figures/        # GO/GSEA, scatterplots, Venn, heatmaps
-├── machine_learning/             # random-forest model (manuscript Suppl. Fig 2c)
-└── supplementary_tables/         # DE genes + GSEA pathway tables (per comparison)
+├── machine_learning/             # random-forest model 
 ```
-
-**Supplementary tables** ([`supplementary_tables/`](supplementary_tables/)):
-Table S1 — differentially expressed genes (gene, log2FC, p-value, adjusted p-value;
-DESeq2, padj ≤ 0.05) and Table S2 — clusterProfiler GSEA pathway enrichment, each
-with one sheet per comparison (LMC & MEF, I/II/III). Provided as CSVs and Excel
-workbooks.
 
 External command-line tools used upstream (their outputs are bundled in `data/`):
 **HOMER** (motif enrichment) and **MEME Suite / FIMO** (motif scanning).
@@ -144,15 +137,6 @@ MSE distributions, averaged feature importances, a feature-ablation analysis, an
 feature-set comparison. Input: `data/final_filtered_gene_tf_data.csv`.
 
 ---
-
-## Reproducibility notes
-- **Notebook outputs were stripped** and all absolute paths rewritten to be
-  relative to `data/`, so notebooks are clean and portable.
-- **18 referenced inputs were not located** in the source tree (GC/TATA Venn inputs
-  and some RSEM DE tables) — listed in `data/README.md`. Regenerate them from the
-  upstream step to reproduce those specific panels.
-- **R package versions are unpinned** — after building the env, capture exact
-  versions with `sessionInfo()` (see `environment/R_sessionInfo_notes.md`).
 
 ## License
 MIT (see [`LICENSE`](LICENSE)). Please cite the associated manuscript if you use this code.
