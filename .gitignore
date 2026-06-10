@@ -27,3 +27,6 @@ environment/R_sessionInfo.txt
 # Uncomment if you prefer NOT to version the bundled data:
 # data/
 *.log
+
+# generated ML outputs
+analysis_outputs/
