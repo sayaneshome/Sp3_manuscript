@@ -15,6 +15,33 @@ reproduced end-to-end.
 
 ---
 
+## Experimental design and contrasts (I, II, III)
+
+Each cell type (MEF and LMC) has two factors — **genotype** (`wt` reference vs `mut`,
+i.e. Sp3-null) and **condition** (`Control` reference vs `LPS`). DESeq2 is fit with an
+interaction design:
+
+```r
+design = ~ genotype + condition + genotype:condition
+dds$genotype  <- relevel(dds$genotype,  ref = "wt")
+dds$condition <- relevel(dds$condition, ref = "Control")
+```
+
+The three contrasts referenced throughout (I, II, III) are extracted from this single
+fitted model:
+
+| Contrast | Comparison | DESeq2 call |
+|---|---|---|
+| **I**   | LPS vs Control **in wild-type** (LPS response in WT) | `results(dds, contrast = c("condition","LPS","Control"))` |
+| **II**  | LPS vs Control **in Sp3-null** (LPS response in mutant; main effect + interaction) | `results(dds, list(c("condition_LPS_vs_Control","genotypemut.conditionLPS")))` |
+| **III** | Sp3-null vs wild-type **at baseline/Control** (effect of Sp3 loss) | `results(dds, contrast = c("genotype","mut","wt"))` |
+
+"up"/"down" denote genes with `log2FoldChange` > 1 / < −1 at `padj < 0.05`. The
+contrasts are computed identically for MEF and LMC in the Stage-1 notebooks
+(`bioinformatics/differential_expression/2025_{MEF,LMC}_final_manuscript_svg_and_full_analyses.ipynb`).
+
+---
+
 ## Quick start
 
 ```bash

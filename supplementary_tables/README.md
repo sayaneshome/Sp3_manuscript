@@ -4,6 +4,20 @@ Differential-expression and pathway-enrichment results for all six contrasts
 (**LMC** and **MEF**, comparisons **I, II, III**). Provided both as per-comparison
 CSVs and as two multi-sheet Excel workbooks (one sheet per comparison).
 
+## Contrast definitions (I, II, III)
+
+From a DESeq2 interaction model `~ genotype + condition + genotype:condition`
+(`genotype`: `wt` ref vs `mut` = Sp3-null; `condition`: `Control` ref vs `LPS`),
+fit separately for MEF and LMC:
+
+| Contrast | Comparison | DESeq2 call |
+|---|---|---|
+| **I**   | LPS vs Control in **wild-type** | `results(dds, contrast = c("condition","LPS","Control"))` |
+| **II**  | LPS vs Control in **Sp3-null** (main effect + interaction) | `results(dds, list(c("condition_LPS_vs_Control","genotypemut.conditionLPS")))` |
+| **III** | **Sp3-null vs wild-type** at baseline (Control) | `results(dds, contrast = c("genotype","mut","wt"))` |
+
+Computed in `bioinformatics/differential_expression/2025_{MEF,LMC}_final_manuscript_svg_and_full_analyses.ipynb`.
+
 ```
 supplementary_tables/
 ├── Supplementary_Table_S1_DEgenes.xlsx        # 6 sheets: LMC_I/II/III, MEF_I/II/III
