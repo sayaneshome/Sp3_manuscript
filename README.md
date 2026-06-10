@@ -47,8 +47,6 @@ Prefer pip + a system R? Use `environment/requirements.txt` (Python) and
 Sp3_manuscript/
 ├── README.md
 ├── LICENSE                       # MIT
-├── CITATION.cff
-├── CODE_AVAILABILITY.md          # manuscript-ready statement
 ├── environment/
 │   ├── environment.yml           # one-step conda env (Python + R + Bioconductor)
 │   ├── requirements.txt          # Python deps (pinned)
@@ -129,9 +127,5 @@ feature-set comparison. Input: `data/final_filtered_gene_tf_data.csv`.
 - **R package versions are unpinned** — after building the env, capture exact
   versions with `sessionInfo()` (see `environment/R_sessionInfo_notes.md`).
 
-## Code availability
-See [`CODE_AVAILABILITY.md`](CODE_AVAILABILITY.md) for a manuscript-ready statement.
-
-## License & citation
-MIT (see [`LICENSE`](LICENSE)). Please cite the associated manuscript and this
-repository (see [`CITATION.cff`](CITATION.cff)).
+## License
+MIT (see [`LICENSE`](LICENSE)). Please cite the associated manuscript if you use this code.
