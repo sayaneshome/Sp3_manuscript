@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript and this repository."
+title: "Sp3 RNA-seq analysis: differential expression, motif enrichment, and machine-learning workflow"
+authors:
+  - family-names: Shome
+    given-names: Sayane
+    email: sayaneshome.rsg@gmail.com
+repository-code: "https://github.com/<your-github-username>/sp3-rnaseq-analysis"
+license: MIT
+keywords:
+  - RNA-seq
+  - Sp3
+  - differential expression
+  - DESeq2
+  - transcription factor motif enrichment
+  - random forest
+  - reproducibility

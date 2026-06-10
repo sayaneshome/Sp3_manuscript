@@ -1,0 +1,29 @@
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*~
+.idea/
+.vscode/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+*.egg-info/
+
+# --- R ---
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# --- environment captures (regenerate locally) ---
+environment/R_sessionInfo.txt
+
+# --- large / derived outputs (keep the repo about CODE + inputs) ---
+# Uncomment if you prefer NOT to version the bundled data:
+# data/
+*.log

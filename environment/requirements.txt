@@ -1,0 +1,27 @@
+# Python environment for the Sp3 RNA-seq reproducibility package
+# Python 3.11 (developed/verified on 3.11.9)
+# Versions below were captured from the working analysis environment.
+# To recreate: python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+
+# --- core data / numerics ---
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.16.2
+statsmodels==0.14.5
+
+# --- plotting ---
+matplotlib==3.9.4
+seaborn==0.13.2
+
+# --- machine learning (manuscript random-forest analysis) ---
+scikit-learn==1.7.2
+xgboost==2.1.1
+
+# --- bioinformatics / sequence ---
+biopython==1.81             # imported as Bio (FASTA handling, motif scanning)
+requests==2.31.0            # programmatic downloads / sequence fetch
+
+# --- R bridge ---
+# The differential_expression notebooks run R (DESeq2 etc.) via %%R cell magic.
+# Install rpy2 and a working R (see install_R_packages.R). Pin once installed.
+rpy2

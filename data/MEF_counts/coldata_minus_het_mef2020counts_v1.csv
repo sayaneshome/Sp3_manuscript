@@ -1,0 +1,16 @@
+﻿AMC11,P8_4_Lps3,wt,LPS
+AMC12,P8_4_Lps5,wt,LPS
+AMC21,P8_4_Lps4,wt,LPS
+AMC3,P7_4_Lps1,wt,LPS
+AMC4,P7_4_Lps2,wt,LPS
+AMC6,P4_5_Lps2,mut,LPS
+AMC18,P4_5_Lps3,mut,LPS
+AMC22,P4_5_Lps1,mut,LPS
+AMC1,P7_4_Ctrl1,wt,Control
+AMC2,P7_4_Ctrl2,wt,Control
+AMC10,P8_4_Ctrl3,wt,Control
+AMC19,P8_4_Ctrl4,wt,Control
+AMC20,P8_4_Ctrl5,wt,Control
+AMC5,P4_5_Ctrl1,mut,Control
+AMC26,P4_5_Ctrl3,mut,Control
+AMC13,P4_5_Ctrl2,mut,Control

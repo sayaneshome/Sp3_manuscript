@@ -1,0 +1,64 @@
+# One-step combined Python + R environment for full reproducibility.
+# Create with:
+#   conda env create -f environment/environment.yml
+#   conda activate sp3-rnaseq
+# (Use mamba for a much faster solve: mamba env create -f environment/environment.yml)
+#
+# This installs Python, R, and the Bioconductor stack together so the
+# differential-expression notebooks (which call R via rpy2 %%R magic) run as-is.
+name: sp3-rnaseq
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  # --- Python ---
+  - python=3.11
+  - numpy=1.26
+  - pandas=2.2
+  - scipy=1.16
+  - statsmodels=0.14
+  - matplotlib=3.9
+  - seaborn=0.13
+  - scikit-learn=1.7
+  - xgboost=2.1
+  - biopython=1.81
+  - requests
+  - jupyterlab
+  - rpy2
+  # --- R base + bridge ---
+  - r-base=4.4
+  # --- R / CRAN ---
+  - r-tidyverse
+  - r-readxl
+  - r-reshape2
+  - r-ggrepel
+  - r-ggridges
+  - r-cowplot
+  - r-gridextra
+  - r-patchwork
+  - r-pheatmap
+  - r-rcolorbrewer
+  - r-corrplot
+  - r-factoextra
+  - r-venndiagram
+  - r-upsetr
+  - r-plotly
+  - r-svglite
+  - r-systemfonts
+  - r-randomforest
+  - r-ashr
+  - r-jsonlite
+  - r-htmltools
+  - r-knitr
+  - r-repr
+  # --- R / Bioconductor ---
+  - bioconductor-deseq2
+  - bioconductor-apeglm
+  - bioconductor-clusterprofiler
+  - bioconductor-enrichplot
+  - bioconductor-enhancedvolcano
+  - bioconductor-glimma
+  - bioconductor-org.mm.eg.db
+  - bioconductor-org.hs.eg.db
+  - bioconductor-ensdb.mmusculus.v79
+  # Note: r-complexupset may need install.packages("ComplexUpset") if unavailable on conda.
